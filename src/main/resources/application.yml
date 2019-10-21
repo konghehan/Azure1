@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: utf-8
+management:
+  endpoints:
+    web:
+      exposure:
+       include: shutdown
+    #注意下面这个位置！！
+  endpoint:
+    shutdown:
+      enabled: true
